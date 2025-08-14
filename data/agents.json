@@ -1,0 +1,27 @@
+[
+	{
+		"id": "agent-intake",
+		"name": "Agent.Intake",
+		"description": "Collects context",
+		"status": "healthy",
+		"icon": "comments",
+		"accent": "indigo"
+	},
+	{
+		"id": "agent-ingest",
+		"name": "Agent.Ingest",
+		"description": "Processes documents",
+		"status": "healthy",
+		"icon": "file-import",
+		"accent": "blue"
+	},
+	{
+		"id": "agent-proposal-writer",
+		"name": "Agent.ProposalWriter",
+		"description": "Creates proposals",
+		"status": "degraded",
+		"icon": "pen-fancy",
+		"accent": "purple"
+	}
+]
+

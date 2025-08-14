@@ -9,55 +9,6 @@ function showClientPortal() {
 	document.getElementById('clientPortal').classList.remove('hidden');
 }
 
-// Sidebar navigation handling
-const sectionTitleMap = {
-	dashboard: 'Admin Dashboard',
-	clients: 'Clients',
-	projects: 'Projects',
-	agents: 'Agents',
-	intake: 'Intake Chat',
-	proposals: 'Proposals',
-	analytics: 'Analytics',
-	settings: 'Settings'
-};
-
-function showSection(sectionKey) {
-	// hide all sections
-	document.querySelectorAll('.section').forEach(el => el.classList.add('hidden'));
-	// show selected
-	const active = document.getElementById(`section-${sectionKey}`);
-	if (active) {
-		active.classList.remove('hidden');
-	}
-	// update title
-	const title = document.getElementById('topNavTitle');
-	if (title && sectionTitleMap[sectionKey]) {
-		title.textContent = sectionTitleMap[sectionKey];
-	}
-	// update sidebar active styles
-	document.querySelectorAll('.sidebar-item').forEach(item => {
-		item.classList.remove('bg-indigo-50', 'text-indigo-700');
-		item.querySelector('i')?.classList.remove('text-indigo-600');
-		item.classList.add('text-gray-600');
-	});
-	const activeItem = document.querySelector(`.sidebar-item[data-section="${sectionKey}"]`);
-	if (activeItem) {
-		activeItem.classList.add('bg-indigo-50', 'text-indigo-700');
-		activeItem.classList.remove('text-gray-600');
-		activeItem.querySelector('i')?.classList.add('text-indigo-600');
-	}
-}
-
-// Attach click listeners to sidebar
-document.querySelectorAll('.sidebar-item[data-section]').forEach(item => {
-	item.addEventListener('click', () => {
-		const sectionKey = item.getAttribute('data-section');
-		showSection(sectionKey);
-	});
-});
-
-// Default section
-showSection('dashboard');
 
 // Simulate chat interaction
 document.getElementById('chatSendButton').addEventListener('click', function() {

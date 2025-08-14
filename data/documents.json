@@ -1,0 +1,31 @@
+[
+	{
+		"id": "doc-market-report",
+		"projectId": "proj-market-analysis",
+		"title": "Market Analysis Report",
+		"type": "pdf",
+		"updatedAt": "2023-06-28"
+	},
+	{
+		"id": "doc-competitor-data",
+		"projectId": "proj-competitive-benchmark",
+		"title": "Competitor Data",
+		"type": "xlsx",
+		"updatedAt": "2023-06-20"
+	},
+	{
+		"id": "doc-findings-presentation",
+		"projectId": "proj-market-analysis",
+		"title": "Findings Presentation",
+		"type": "pptx",
+		"updatedAt": "2023-06-25"
+	},
+	{
+		"id": "doc-proposal",
+		"projectId": "proj-market-analysis",
+		"title": "Project Proposal",
+		"type": "contract",
+		"updatedAt": "2023-06-10"
+	}
+]
+

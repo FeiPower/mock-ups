@@ -1,0 +1,31 @@
+[
+	{
+		"id": "proj-market-analysis",
+		"clientId": "acme",
+		"name": "Market Analysis",
+		"status": "in_progress",
+		"progress": 65
+	},
+	{
+		"id": "proj-competitive-benchmark",
+		"clientId": "globex",
+		"name": "Competitive Benchmark",
+		"status": "in_progress",
+		"progress": 40
+	},
+	{
+		"id": "proj-ai-strategy",
+		"clientId": "umbrella",
+		"name": "AI Strategy",
+		"status": "review",
+		"progress": 90
+	},
+	{
+		"id": "proj-digital-transformation",
+		"clientId": "initech",
+		"name": "Digital Transformation",
+		"status": "backlog",
+		"progress": 0
+	}
+]
+

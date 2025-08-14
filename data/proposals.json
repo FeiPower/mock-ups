@@ -1,0 +1,17 @@
+[
+	{
+		"id": "prop-market-analysis-v1-2",
+		"projectId": "proj-market-analysis",
+		"clientId": "acme",
+		"title": "Market Analysis • v1.2",
+		"status": "in_review"
+	},
+	{
+		"id": "prop-competitive-benchmark-v0-9",
+		"projectId": "proj-competitive-benchmark",
+		"clientId": "globex",
+		"title": "Competitive Benchmark • v0.9",
+		"status": "draft"
+	}
+]
+

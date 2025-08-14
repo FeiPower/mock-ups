@@ -1,0 +1,21 @@
+[
+	{
+		"id": "acme",
+		"name": "Acme Corporation",
+		"industry": "Manufacturing",
+		"status": "Active"
+	},
+	{
+		"id": "globex",
+		"name": "Globex Inc.",
+		"industry": "Retail",
+		"status": "Prospect"
+	},
+	{
+		"id": "umbrella",
+		"name": "Umbrella Corp",
+		"industry": "Healthcare",
+		"status": "Inactive"
+	}
+]
+

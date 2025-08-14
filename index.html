@@ -90,7 +90,7 @@
                 <!-- Section: Dashboard -->
                 <div id="section-dashboard" class="section">
                     <!-- Stats Cards -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                    <div id="dashboard-stats" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
                         <div class="bg-white rounded-lg shadow p-6">
                             <div class="flex items-center justify-between">
                                 <div>
@@ -146,7 +146,7 @@
                         <div class="px-6 py-4 border-b border-gray-200">
                             <h3 class="text-lg font-medium text-gray-900">Recent Projects</h3>
                         </div>
-                        <div class="divide-y divide-gray-200">
+                        <div id="dashboard-recent-projects" class="divide-y divide-gray-200">
                             <div class="px-6 py-4 hover:bg-gray-50 cursor-pointer">
                                 <div class="flex items-center justify-between">
                                     <div>
@@ -247,25 +247,25 @@
                             </div>
                             <div class="p-6">
                                 <div class="grid grid-cols-2 gap-4">
-                                    <button class="flex flex-col items-center justify-center p-4 rounded-lg border border-gray-200 hover:bg-gray-50">
+                                    <button id="qa-new-client" class="flex flex-col items-center justify-center p-4 rounded-lg border border-gray-200 hover:bg-gray-50">
                                         <div class="p-3 rounded-full bg-indigo-50 text-indigo-600 mb-2">
                                             <i class="fas fa-plus"></i>
                                         </div>
                                         <p class="text-sm font-medium text-gray-700">New Client</p>
                                     </button>
-                                    <button class="flex flex-col items-center justify-center p-4 rounded-lg border border-gray-200 hover:bg-gray-50">
+                                    <button id="qa-new-project" class="flex flex-col items-center justify-center p-4 rounded-lg border border-gray-200 hover:bg-gray-50">
                                         <div class="p-3 rounded-full bg-green-50 text-green-600 mb-2">
                                             <i class="fas fa-project-diagram"></i>
                                         </div>
                                         <p class="text-sm font-medium text-gray-700">New Project</p>
                                     </button>
-                                    <button class="flex flex-col items-center justify-center p-4 rounded-lg border border-gray-200 hover:bg-gray-50">
+                                    <button id="qa-upload-docs" class="flex flex-col items-center justify-center p-4 rounded-lg border border-gray-200 hover:bg-gray-50">
                                         <div class="p-3 rounded-full bg-blue-50 text-blue-600 mb-2">
                                             <i class="fas fa-file-upload"></i>
                                         </div>
                                         <p class="text-sm font-medium text-gray-700">Upload Docs</p>
                                     </button>
-                                    <button class="flex flex-col items-center justify-center p-4 rounded-lg border border-gray-200 hover:bg-gray-50">
+                                    <button id="qa-generate-proposal" class="flex flex-col items-center justify-center p-4 rounded-lg border border-gray-200 hover:bg-gray-50">
                                         <div class="p-3 rounded-full bg-purple-50 text-purple-600 mb-2">
                                             <i class="fas fa-file-contract"></i>
                                         </div>
@@ -286,11 +286,11 @@
                                 <p class="text-xs text-gray-500">Manage organizations and stakeholders</p>
                             </div>
                             <div class="flex items-center space-x-2">
-                                <input type="text" placeholder="Search clients..." class="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                                <button class="px-3 py-2 bg-indigo-600 text-white text-sm rounded-lg hover:bg-indigo-700"><i class="fas fa-plus mr-2"></i>New Client</button>
+                                <input id="clients-search" type="text" placeholder="Search clients..." class="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <button id="new-client-button" class="px-3 py-2 bg-indigo-600 text-white text-sm rounded-lg hover:bg-indigo-700"><i class="fas fa-plus mr-2"></i>New Client</button>
                             </div>
                         </div>
-                        <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div id="agents-grid" class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             <div class="border border-gray-200 rounded-lg p-4 hover:shadow transition-shadow">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
@@ -352,15 +352,15 @@
                                 <p class="text-xs text-gray-500">Track delivery across the lifecycle</p>
                             </div>
                             <div class="flex items-center space-x-2">
-                                <select class="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <select id="projects-filter" class="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
                                     <option>All Clients</option>
                                     <option>Acme Corporation</option>
                                     <option>Globex Inc.</option>
                                 </select>
-                                <button class="px-3 py-2 bg-indigo-600 text-white text-sm rounded-lg hover:bg-indigo-700"><i class="fas fa-plus mr-2"></i>New Project</button>
+                                <button id="new-project-button" class="px-3 py-2 bg-indigo-600 text-white text-sm rounded-lg hover:bg-indigo-700"><i class="fas fa-plus mr-2"></i>New Project</button>
                             </div>
                         </div>
-                        <div class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div id="projects-board" class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div>
                                 <h4 class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-3">Backlog</h4>
                                 <div class="space-y-3">
@@ -420,7 +420,7 @@
                             </div>
                             <button class="px-3 py-2 bg-white border border-gray-300 text-sm rounded-lg hover:bg-gray-50"><i class="fas fa-sync mr-2"></i>Sync</button>
                         </div>
-                        <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div id="clients-grid" class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             <div class="border border-gray-200 rounded-lg p-4 hover:shadow">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
@@ -539,7 +539,7 @@
                             </div>
                             <button class="px-3 py-2 bg-indigo-600 text-white text-sm rounded-lg hover:bg-indigo-700"><i class="fas fa-magic mr-2"></i>Generate Proposal</button>
                         </div>
-                        <div class="p-6 divide-y divide-gray-200">
+                        <div id="proposals-list" class="p-6 divide-y divide-gray-200">
                             <div class="py-4 flex items-center justify-between">
                                 <div>
                                     <p class="text-sm font-medium">Market Analysis • v1.2</p>
@@ -568,7 +568,7 @@
 
                 <!-- Section: Analytics -->
                 <div id="section-analytics" class="section hidden">
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div id="analytics-grid" class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                         <div class="bg-white rounded-lg shadow p-6">
                             <p class="text-sm text-gray-500">Win Rate</p>
                             <p class="mt-1 text-2xl font-semibold">62%</p>
@@ -621,15 +621,15 @@
                                 <p class="text-sm font-medium text-gray-700 mb-3">Notifications</p>
                                 <div class="space-y-3">
                                     <label class="flex items-center">
-                                        <input type="checkbox" class="mr-3">
+                                        <input id="notify-email" type="checkbox" class="mr-3">
                                         <span class="text-sm text-gray-600">Email updates</span>
                                     </label>
                                     <label class="flex items-center">
-                                        <input type="checkbox" class="mr-3">
+                                        <input id="notify-slack" type="checkbox" class="mr-3">
                                         <span class="text-sm text-gray-600">Slack alerts</span>
                                     </label>
                                     <label class="flex items-center">
-                                        <input type="checkbox" class="mr-3">
+                                        <input id="notify-weekly" type="checkbox" class="mr-3">
                                         <span class="text-sm text-gray-600">Weekly summary</span>
                                     </label>
                                 </div>
@@ -638,13 +638,18 @@
                                 <p class="text-sm font-medium text-gray-700 mb-3">Workspace</p>
                                 <div class="space-y-3">
                                     <label class="block text-sm text-gray-600">Company Name</label>
-                                    <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded" placeholder="STRTGY AI" />
+                                    <input id="settings-company" type="text" class="w-full px-3 py-2 border border-gray-300 rounded" placeholder="STRTGY AI" />
                                     <label class="block text-sm text-gray-600 mt-3">Default Currency</label>
-                                    <select class="w-full px-3 py-2 border border-gray-300 rounded">
+                                    <select id="settings-currency" class="w-full px-3 py-2 border border-gray-300 rounded">
                                         <option>USD</option>
                                         <option>EUR</option>
                                         <option>MXN</option>
                                     </select>
+                                    <label class="block text-sm text-gray-600 mt-3">Dark Mode</label>
+                                    <label class="flex items-center">
+                                        <input id="settings-dark" type="checkbox" class="mr-3">
+                                        <span class="text-sm text-gray-600">Enable dark theme</span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -690,7 +695,7 @@
                             <h2 class="text-lg font-medium text-gray-900">Acme Corporation</h2>
                             <p class="text-sm text-gray-500">Market Analysis Project</p>
                         </div>
-                        <div class="divide-y divide-gray-200">
+                        <div id="client-docs-list" class="divide-y divide-gray-200">
                             <div class="px-6 py-4">
                                 <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wider">Project Status</h3>
                                 <div class="mt-2">
@@ -903,6 +908,11 @@
         </div>
     </div>
 
+	<script src="js/state.js"></script>
+	<script src="js/api.mock.js"></script>
+	<script src="js/ui.js"></script>
+	<script src="js/views.js"></script>
+	<script src="js/router.js"></script>
 	<script src="scripts.js"></script>
 </body>
 </html>
